@@ -1,7 +1,7 @@
 census <- read.csv('us_census.csv')
 contiguous <- census[!census$state %in% c('AK', 'HI', 'PR'),]
 
-N <- 50
+N <- 10
 
 chosen_counties <- sample(1:nrow(contiguous), N)
 
